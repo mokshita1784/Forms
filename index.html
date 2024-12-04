@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework-1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="heading">
+      <h1>Submission - 1</h1>
+    </div>
+    
+     
+    <div class="form">
+      <form name="validation" onsubmit="return validationForm()" method="post">
+        <!-- Image Upload -->
+        <div>
+          <label for="upload">Choose File</label>
+          <input type="file" id="upload" name="upload" />
+          <span class="file-name" id="file-name"></span>
+        </div>
+
+        <!-- Name -->
+        <div>
+          <label for="name">Enter your name:</label>
+          <input type="text" id="name" name="name" />
+        </div>
+
+        <!-- Date of Birth -->
+        <div>
+          <label for="dob">Enter your Date of Birth:</label>
+          <input type="date" id="dob" name="dob" />
+        </div>
+
+        <!-- Email -->
+        <div>
+          <label for="email">Enter your Email:</label>
+          <input type="email" id="email" name="email" />
+        </div>
+
+        <!-- Password -->
+        <div>
+          <label for="password">Enter a secure Password:</label>
+          <input type="password" id="password" name="password" />
+        </div>
+
+        <!-- Confirm Password -->
+        <div>
+          <label for="confirm-pass">Confirm Password:</label>
+          <input type="password" id="confirm-pass" name="confirm-pass" />
+        </div>
+
+        <!-- Submit Button -->
+        <div>
+          <input type="submit" id="submit" name="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>

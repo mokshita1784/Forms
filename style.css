@@ -1,0 +1,141 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color:#121212;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Heading Styling */
+.heading {
+    background: linear-gradient(45deg, rgb(144, 6, 203), purple, rgb(144,6,203));
+    color:transparent;
+    background-clip: text;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.heading h1 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Centering the form */
+.form {
+    background: #1e1e1e;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(199, 195, 195, 0.1);
+    width: 400px;
+    text-align: left;
+}
+
+/* Form labels styling */
+label {
+    font-weight: bold;
+    background: linear-gradient(45deg, rgb(144, 6, 203), purple, rgb(144,6,203));
+    color:transparent;
+    background-clip: text;
+
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Input field styling */
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="password"],
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    background-color: #333;
+    color: azure;
+}
+
+/* Input field hover and focus effect */
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="file"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    background: linear-gradient(45deg, rgb(144, 6, 203), purple, rgb(144,6,203));
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Submit button hover effect */
+input[type="submit"]:hover {
+    background: rgb(238, 92, 238);
+    transform: translateY(-2px);
+}
+
+input[type="submit"]:active {
+    background-color: #486990;
+    transform: translateY(2px);
+}
+
+/* Custom file input styling */
+input[type="file"] {
+    display: none; /* Hide the original file input */
+}
+
+/* Custom label as the button for file upload */
+label[for="upload"] {
+    background: linear-gradient(45deg, rgb(144, 6, 203), purple, rgb(144,6,203));
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+label[for="upload"]:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+label[for="upload"]:active {
+    background-color: #004494;
+    transform: translateY(2px);
+}
+
+/* Display selected file name */
+.file-name {
+    font-size: 14px;
+    color: #333;
+    margin-top: 10px;
+    display: block;
+}
